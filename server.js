@@ -38,7 +38,7 @@ const mongooseOptions = {
 };
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://jay:<db_password>@user.zee4w.mongodb.net/?retryWrites=true&w=majority&appName=User/school-attendance', mongooseOptions)
+mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://jay:<db_password>@user.zee4w.mongodb.net/school-attendance?retryWrites=true&w=majority', mongooseOptions)
   .then(() => {
     console.log('MongoDB Connected Successfully');
     app.listen(PORT, () => {

@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://jay:jay@user.zee4w.mongodb.net/attendance-system?retryWrites=true&w=majority')
+mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://jay:jay12345@user.zee4w.mongodb.net/?retryWrites=true&w=majority&appName=User')
   .then(() => {
     console.log('MongoDB Connected Successfully');
     app.listen(PORT, () => {

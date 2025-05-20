@@ -31,14 +31,10 @@ app.get('/', (req, res) => {
   res.send('School Attendance API is running');
 });
 
-// MongoDB connection options
-const mongooseOptions = {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-};
+
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://jay:<db_password>@user.zee4w.mongodb.net/school-attendance?retryWrites=true&w=majority', mongooseOptions)
+mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://jay:jay@user.zee4w.mongodb.net/attendance-system?retryWrites=true&w=majority')
   .then(() => {
     console.log('MongoDB Connected Successfully');
     app.listen(PORT, () => {

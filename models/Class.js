@@ -10,7 +10,7 @@ const classSchema = new mongoose.Schema({
   division: {
     type: String,
     required: true,
-    enum: ['Pre-School', 'Primary (1-5)', 'Middle (6-10)', 'Secondary (11-12)']
+    enum: ['Pre-School', 'Primary (1-5)', 'Middle (6-10)', 'Middle (6-10 General)', 'Secondary (11-12)']
   },
   department: {
     type: String,
